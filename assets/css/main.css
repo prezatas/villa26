@@ -1,0 +1,208 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+    background-color: #fff;
+	font-family: 'Alegreya', serif;
+	line-height: 1.6em;
+    color: #73726C;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #bfa145;
+}
+.pd-tb-10{
+	padding-top: 10px;
+    padding-bottom: 10px;
+}
+.pd-tb-15{
+	padding-top: 15px;
+    padding-bottom: 15px;
+}
+.pd-tb-20{
+	padding-top: 20px;
+    padding-bottom:20px;
+}
+.pd-tb-30{
+	padding-top: 30px;
+    padding-bottom:30px;
+}
+
+.mg-b-0{
+	margin-bottom:0px;	
+}
+.mg-t-15{
+	margin-top:15px;	
+}
+.mg-t-30{
+	margin-top:30px;	
+}
+.mg-tb-30{
+	margin-top:30px;
+	margin-bottom:30px;	
+}
+
+.btn-white {
+    background: #fff;
+    color: #4f1110;
+    border-radius: 0;
+    border: solid 1px #4f1110;
+    overflow: hidden;
+    font-size: 10px;
+    font-weight: 400;
+    padding: 0.75rem 2rem 0.75rem 2rem;
+    display: inline-block;
+    vertical-align: middle;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    transition: all 0.4s ease 0s;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: left;
+    position: relative;
+}
+
+.btn-holder{
+	text-align:center;
+}
+.btn-white:hover {
+    background: #4f1110;
+    color: #fff;
+    border: solid 1px #777777;
+}
+.fixed{
+	position: fixed;
+    left: 0px;
+    right: 0px;
+	top:0;
+    z-index: 1000;
+    background: white;
+	box-shadow: 0 1px 3px rgba(50, 50, 50, 0.4);
+}
+.top {
+    background: rgba(190, 30, 46, 0.76) url(../img/png/top-arrow.png);
+    background-size: 40px;
+    background-position: 4px;
+    background-repeat: no-repeat;
+    bottom: 0;
+    right: 0;
+    color: #ffffff;
+    display: none;
+    opacity: 0.75;
+    z-index: 11;
+    padding: 5px 5px 5px 5px;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+    transition: all ease .3s;
+    border: 1px solid #c5c5c5;
+}
+#cover {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #6284ce;
+  z-index: 9999;
+  font-size: 50px;
+  text-align: center;
+  padding-top: 200px;
+  color: #fff;
+  font-family:tahoma;
+  text-transform:uppercase;
+}
+
+.circle-preloader {
+	display: block;
+	width: 50px;
+	height: 50px;
+	border: 4px solid #444;
+	border-bottom-color: #888;
+	
+	border-radius: 50%;
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	
+	animation: spin .75s infinite linear;
+}
+
+@keyframes spin {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+
+/*calender*/
+.calendar-wrapper {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid @calendar-border;
+    border-radius: 5px;
+    background: @calendar-bg;
+}
+table {
+  clear:both;
+  width:100%;
+  border:1px solid @calendar-border;
+  border-radius:3px;
+  border-collapse:collapse;
+  color:@calendar-color;
+}
+td {
+  height:48px;
+  text-align:center;
+  vertical-align:middle;
+  border-right:1px solid @calendar-border;
+  border-top:1px solid @calendar-border;
+  width:100% / 7;
+}
+td.not-current {
+  color:@calendar-fade-color;;
+}
+td.normal {}
+td.today {
+  font-weight:700;
+  color:@calendar-standout;
+  font-size:1.5em;
+}
+thead td {
+  border:none;
+  color:@calendar-standout;
+  text-transform:uppercase;
+  font-size:1.5em;
+}
+#btnPrev {
+  float:left;
+  margin-bottom:20px;
+
+}
+
+#btnNext {
+  float:right;
+  margin-bottom:20px;
+}
+
+#btnPrev, #btnNext {
+  background:transparent;
+  border:none;
+  outline:none;
+  font-size:1em;
+  color:@calendar-fade-color;
+  cursor:pointer;
+  font-family:"Roboto Condensed", sans-serif;
+  text-transform:uppercase;
+  transition:all 0.3s ease;
+
+}
+#btnPrev:hover, #btnNext:hover {
+    color: #28283b;
+    font-weight: bold;
+}
+
+/*calender closed*/

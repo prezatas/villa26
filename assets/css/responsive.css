@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media (max-width: 767px){
+
+#banner-main .slide-cont-wrap .wrap-info .information,.head-top {
+	display:none;
+}
+.slide-list li a {
+    width: 7px;
+    height: 7px;
+}
+.slide-list {
+	bottom:0;
+}
+.section-midintro .left-text {
+    padding: 50px 0;
+    padding-right: 0;
+    width: 100%;
+}
+.section-midintro .right-image {
+    position: relative;
+    height: 300px;
+    margin-bottom: 60px;
+	width:100%;
+}
+.flex-section .flex-left{
+	width:100%;
+}
+.flex-section .flex-right {
+    width: 100%;
+	margin-bottom:60px;
+}
+.flex-section .flex-img:before {
+	display:none;
+}
+.section-gallery .f-hotel .image{
+	position:relative;
+	height: 200px;
+}
+.section-gallery .f-hotel .image, .section-gallery .f-hotel .desc {
+    width: 100%;
+}
+.section-gallery .f-hotel{
+	width:100%;
+	margin-bottom:30px;
+}
